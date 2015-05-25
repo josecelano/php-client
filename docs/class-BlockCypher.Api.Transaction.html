@@ -1,0 +1,2128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class BlockCypher\Api\Transaction</title>
+
+	<link rel="stylesheet" href="resources/bootstrap.min.css?973e37a8502921d56bc02bb55321f45b072b6f71">
+	<link rel="stylesheet" href="resources/style.css?49f43d3208c5d7e33fa16d36107a345bf11cc00d">
+
+</head>
+
+<body>
+	<nav id="navigation" class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a href="index.html" class="navbar-brand">Overview</a>
+			</div>
+			<div class="collapse navbar-collapse">
+
+                <form id="search" class="navbar-form navbar-left" role="search">
+                    <input type="hidden" name="cx" value="">
+                    <input type="hidden" name="ie" value="UTF-8">
+                    <div class="form-group">
+                        <input type="text" name="q" class="search-query form-control" placeholder="Search">
+					</div>
+				</form>
+
+				<ul class="nav navbar-nav">
+					<li>
+						<a href="namespace-BlockCypher.Api.html" title="Summary of BlockCypher\Api"><span>Namespace</span></a>
+					</li>
+					<li class="active">
+<span>Class</span>					</li>
+
+
+
+
+
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div id="left">
+	<div id="menu">
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+					<li class="active">
+						<a href="namespace-BlockCypher.html">
+							BlockCypher<span></span>
+						</a>
+							<ul>
+					<li class="active">
+						<a href="namespace-BlockCypher.Api.html">
+							Api						</a>
+							</li>
+					<li>
+						<a href="namespace-BlockCypher.Auth.html">
+							Auth						</a>
+							</li>
+					<li>
+						<a href="namespace-BlockCypher.Cache.html">
+							Cache						</a>
+							</li>
+					<li>
+						<a href="namespace-BlockCypher.Common.html">
+							Common						</a>
+							</li>
+					<li>
+						<a href="namespace-BlockCypher.Converter.html">
+							Converter						</a>
+							</li>
+					<li>
+						<a href="namespace-BlockCypher.Core.html">
+							Core						</a>
+							</li>
+					<li>
+						<a href="namespace-BlockCypher.Exception.html">
+							Exception						</a>
+							</li>
+					<li>
+						<a href="namespace-BlockCypher.Handler.html">
+							Handler						</a>
+							</li>
+					<li>
+						<a href="namespace-BlockCypher.Rest.html">
+							Rest						</a>
+							</li>
+					<li>
+						<a href="namespace-BlockCypher.Security.html">
+							Security						</a>
+							</li>
+					<li>
+						<a href="namespace-BlockCypher.Transport.html">
+							Transport						</a>
+							</li>
+					<li>
+						<a href="namespace-BlockCypher.Validation.html">
+							Validation						</a>
+							</li>
+								</ul></li>
+			</ul>
+		</div>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-BlockCypher.Api.Address.html">Address</a></li>
+				<li><a href="class-BlockCypher.Api.AddressBalance.html">AddressBalance</a></li>
+				<li><a href="class-BlockCypher.Api.AddressCreateResponse.html">AddressCreateResponse</a></li>
+				<li><a href="class-BlockCypher.Api.AddressesList.html">AddressesList</a></li>
+				<li><a href="class-BlockCypher.Api.Block.html">Block</a></li>
+				<li><a href="class-BlockCypher.Api.Chain.html">Chain</a></li>
+				<li><a href="class-BlockCypher.Api.Currency.html">Currency</a></li>
+				<li><a href="class-BlockCypher.Api.Error.html">Error</a></li>
+				<li><a href="class-BlockCypher.Api.FullAddress.html">FullAddress</a></li>
+				<li><a href="class-BlockCypher.Api.Input.html">Input</a></li>
+				<li><a href="class-BlockCypher.Api.Output.html">Output</a></li>
+				<li><a href="class-BlockCypher.Api.Patch.html">Patch</a></li>
+				<li><a href="class-BlockCypher.Api.PatchRequest.html">PatchRequest</a></li>
+				<li><a href="class-BlockCypher.Api.RelatedResources.html">RelatedResources</a></li>
+				<li class="active"><a href="class-BlockCypher.Api.Transaction.html">Transaction</a></li>
+				<li><a href="class-BlockCypher.Api.TransactionConfidence.html">TransactionConfidence</a></li>
+				<li><a href="class-BlockCypher.Api.Txref.html">Txref</a></li>
+				<li><a href="class-BlockCypher.Api.Wallet.html">Wallet</a></li>
+				<li><a href="class-BlockCypher.Api.WalletGenerateAddressResponse.html">WalletGenerateAddressResponse</a></li>
+				<li><a href="class-BlockCypher.Api.WebHook.html">WebHook</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+	<div id="rightInner">
+<div id="content" class="class">
+	<h1>Class Transaction</h1>
+
+
+	<div class="description">
+	<p>Class Chain</p>
+
+<p>A resource representing a block.</p>
+	</div>
+
+	<dl class="tree well">
+		<dd style="padding-left:0px">
+			<a href="class-BlockCypher.Common.BlockCypherModel.html"><span>BlockCypher\Common\BlockCypherModel</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by">
+			<a href="class-BlockCypher.Common.BlockCypherBaseModel.html"><span>BlockCypher\Common\BlockCypherBaseModel</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:60px">
+			<img src="resources/inherit.png" alt="Extended by">
+			<a href="class-BlockCypher.Common.BlockCypherResourceModel.html"><span>BlockCypher\Common\BlockCypherResourceModel</span></a>
+			
+			 implements 
+				<a href="class-BlockCypher.Rest.IResource.html"><span>BlockCypher\Rest\IResource</span></a>
+			
+			
+		</dd>
+		<dd style="padding-left:90px">
+			<img src="resources/inherit.png" alt="Extended by">
+<b><span>BlockCypher\Api\Transaction</span></b>			
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="alert alert-info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-BlockCypher.html">BlockCypher</a>\<a href="namespace-BlockCypher.Api.html">Api</a><br>
+		<b>Package:</b> BlockCypher\Api<br>
+
+			<b>Located at</b> <a href="source-class-BlockCypher.Api.Transaction.html#12-648" title="Go to source code">BlockCypher/Api/Transaction.php</a>
+		<br>
+	</div>
+
+
+
+		<div class="panel panel-default">
+			<div class="panel-heading"><h2>Methods summary</h2></div>
+			<table class="summary table table-bordered table-striped methods" id="methods">
+		<tr data-order="get" id="_get">
+
+			<td class="attributes"><code>
+				 public static
+				<code><a href="class-BlockCypher.Api.Transaction.html">BlockCypher\Api\Transaction</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_get">#</a>
+			<code><a href="source-class-BlockCypher.Api.Transaction.html#46-81" title="Go to source code">get</a>( <span>string <var>$hash</var></span>, <span>array <var>$params</var> = <span class="php-keyword1">array</span>()</span>, <span><code><a href="class-BlockCypher.Rest.ApiContext.html">BlockCypher\Rest\ApiContext</a></code> <var>$apiContext</var> = <span class="php-keyword1">null</span></span>, <span><code><a href="class-BlockCypher.Transport.BlockCypherRestCall.html">BlockCypher\Transport\BlockCypherRestCall</a></code> <var>$restCall</var> = <span class="php-keyword1">null</span></span> )</code>
+
+			<div class="description short">
+				<p>Obtain the Transaction resource for the given identifier.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Obtain the Transaction resource for the given identifier.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$hash</var></dt>
+						<dd></dd>
+						<dt><var>$params</var></dt>
+						<dd>Parameters. Options: instart, outstart and limit</dd>
+						<dt><var>$apiContext</var></dt>
+						<dd>is the APIContext for this call. It can be used to pass dynamic configuration and credentials.</dd>
+						<dt><var>$restCall</var></dt>
+						<dd>is the Rest Call Service that is used to make rest calls</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-BlockCypher.Api.Transaction.html">BlockCypher\Api\Transaction</a></code>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getMultiple" id="_getMultiple">
+
+			<td class="attributes"><code>
+				 public static
+				<code><a href="class-BlockCypher.Api.Transaction.html">BlockCypher\Api\Transaction</a>[]</code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getMultiple">#</a>
+			<code><a href="source-class-BlockCypher.Api.Transaction.html#83-117" title="Go to source code">getMultiple</a>( <span>string[] <var>$array</var></span>, <span>array <var>$params</var> = <span class="php-keyword1">array</span>()</span>, <span><code><a href="class-BlockCypher.Rest.ApiContext.html">BlockCypher\Rest\ApiContext</a></code> <var>$apiContext</var> = <span class="php-keyword1">null</span></span>, <span><code><a href="class-BlockCypher.Transport.BlockCypherRestCall.html">BlockCypher\Transport\BlockCypherRestCall</a></code> <var>$restCall</var> = <span class="php-keyword1">null</span></span> )</code>
+
+			<div class="description short">
+				<p>Obtain multiple Transaction resources for the given identifier.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Obtain multiple Transaction resources for the given identifier.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$array</var></dt>
+						<dd></dd>
+						<dt><var>$params</var></dt>
+						<dd>Parameters. Options: instart, outstart and limit</dd>
+						<dt><var>$apiContext</var></dt>
+						<dd>is the APIContext for this call. It can be used to pass dynamic configuration and credentials.</dd>
+						<dt><var>$restCall</var></dt>
+						<dd>is the Rest Call Service that is used to make rest calls</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-BlockCypher.Api.Transaction.html">BlockCypher\Api\Transaction</a>[]</code>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getReceiveCount" id="_getReceiveCount">
+
+			<td class="attributes"><code>
+				 public 
+				integer
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getReceiveCount">#</a>
+			<code><a href="source-class-BlockCypher.Api.Transaction.html#119-127" title="Go to source code">getReceiveCount</a>( )</code>
+
+			<div class="description short">
+				<p>Unconfirmed transactions only. The number of peers that have sent this transaction to us (see Zero Confirmations).</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Unconfirmed transactions only. The number of peers that have sent this transaction to us (see Zero Confirmations).</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						integer
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setReceiveCount" id="_setReceiveCount">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setReceiveCount">#</a>
+			<code><a href="source-class-BlockCypher.Api.Transaction.html#129-139" title="Go to source code">setReceiveCount</a>( <span>integer <var>$receive_count</var></span> )</code>
+
+			<div class="description short">
+				<p>Unconfirmed transactions only. The number of peers that have sent this transaction to us (see Zero Confirmations).</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Unconfirmed transactions only. The number of peers that have sent this transaction to us (see Zero Confirmations).</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$receive_count</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<br>$this
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getDoubleOf" id="_getDoubleOf">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getDoubleOf">#</a>
+			<code><a href="source-class-BlockCypher.Api.Transaction.html#141-149" title="Go to source code">getDoubleOf</a>( )</code>
+
+			<div class="description short">
+				<p>If the transaction is a double spend, what transaction it's double-spending (see Zero Confirmations).</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>If the transaction is a double spend, what transaction it's double-spending (see Zero Confirmations).</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						string
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setDoubleOf" id="_setDoubleOf">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setDoubleOf">#</a>
+			<code><a href="source-class-BlockCypher.Api.Transaction.html#151-161" title="Go to source code">setDoubleOf</a>( <span>string <var>$double_of</var></span> )</code>
+
+			<div class="description short">
+				<p>If the transaction is a double spend, what transaction it's double-spending (see Zero Confirmations).</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>If the transaction is a double spend, what transaction it's double-spending (see Zero Confirmations).</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$double_of</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<br>$this
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getHex" id="_getHex">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getHex">#</a>
+			<code><a href="source-class-BlockCypher.Api.Transaction.html#163-172" title="Go to source code">getHex</a>( )</code>
+
+			<div class="description short">
+				<p>Hex encoded bytes of the raw transaction (as sent over the network).
+Only included when the includeHex URL property is set to true.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Hex encoded bytes of the raw transaction (as sent over the network).
+Only included when the includeHex URL property is set to true.</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						string
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setHex" id="_setHex">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setHex">#</a>
+			<code><a href="source-class-BlockCypher.Api.Transaction.html#174-185" title="Go to source code">setHex</a>( <span>string <var>$hex</var></span> )</code>
+
+			<div class="description short">
+				<p>Hex encoded bytes of the raw transaction (as sent over the network).
+Only included when the includeHex URL property is set to true.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Hex encoded bytes of the raw transaction (as sent over the network).
+Only included when the includeHex URL property is set to true.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$hex</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<br>$this
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getAddresses" id="_getAddresses">
+
+			<td class="attributes"><code>
+				 public 
+				string[]
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getAddresses">#</a>
+			<code><a href="source-class-BlockCypher.Api.Transaction.html#187-195" title="Go to source code">getAddresses</a>( )</code>
+
+			<div class="description short">
+				<p>Array of Bitcoin addresses involved in the transaction.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Array of Bitcoin addresses involved in the transaction.</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						string[]
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setAddresses" id="_setAddresses">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setAddresses">#</a>
+			<code><a href="source-class-BlockCypher.Api.Transaction.html#197-207" title="Go to source code">setAddresses</a>( <span>string[] <var>$addresses</var></span> )</code>
+
+			<div class="description short">
+				<p>Array of Bitcoin addresses involved in the transaction.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Array of Bitcoin addresses involved in the transaction.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$addresses</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<br>$this
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getTotal" id="_getTotal">
+
+			<td class="attributes"><code>
+				 public 
+				integer
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getTotal">#</a>
+			<code><a href="source-class-BlockCypher.Api.Transaction.html#209-217" title="Go to source code">getTotal</a>( )</code>
+
+			<div class="description short">
+				<p>Total amount exchanged in this transaction, in satoshis.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Total amount exchanged in this transaction, in satoshis.</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						integer
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setTotal" id="_setTotal">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setTotal">#</a>
+			<code><a href="source-class-BlockCypher.Api.Transaction.html#219-229" title="Go to source code">setTotal</a>( <span>integer <var>$total</var></span> )</code>
+
+			<div class="description short">
+				<p>Total amount exchanged in this transaction, in satoshis.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Total amount exchanged in this transaction, in satoshis.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$total</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<br>$this
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getPreference" id="_getPreference">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getPreference">#</a>
+			<code><a href="source-class-BlockCypher.Api.Transaction.html#231-240" title="Go to source code">getPreference</a>( )</code>
+
+			<div class="description short">
+				<p>How likely is this transaction to make it to the next block, reflects the preference level miners have to include
+this transaction. Can be high, medium or low.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>How likely is this transaction to make it to the next block, reflects the preference level miners have to include
+this transaction. Can be high, medium or low.</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						string
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setPreference" id="_setPreference">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setPreference">#</a>
+			<code><a href="source-class-BlockCypher.Api.Transaction.html#242-253" title="Go to source code">setPreference</a>( <span>string <var>$preference</var></span> )</code>
+
+			<div class="description short">
+				<p>How likely is this transaction to make it to the next block, reflects the preference level miners have to include
+this transaction. Can be high, medium or low.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>How likely is this transaction to make it to the next block, reflects the preference level miners have to include
+this transaction. Can be high, medium or low.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$preference</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<br>$this
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getRelayedBy" id="_getRelayedBy">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getRelayedBy">#</a>
+			<code><a href="source-class-BlockCypher.Api.Transaction.html#255-263" title="Go to source code">getRelayedBy</a>( )</code>
+
+			<div class="description short">
+				<p>Address of the peer that sent us this transaction.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Address of the peer that sent us this transaction.</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						string
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setRelayedBy" id="_setRelayedBy">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setRelayedBy">#</a>
+			<code><a href="source-class-BlockCypher.Api.Transaction.html#265-275" title="Go to source code">setRelayedBy</a>( <span>string <var>$relayed_by</var></span> )</code>
+
+			<div class="description short">
+				<p>Address of the peer that sent us this transaction.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Address of the peer that sent us this transaction.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$relayed_by</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<br>$this
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getConfirmed" id="_getConfirmed">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getConfirmed">#</a>
+			<code><a href="source-class-BlockCypher.Api.Transaction.html#277-285" title="Go to source code">getConfirmed</a>( )</code>
+
+			<div class="description short">
+				<p>Date at which the transaction was included in a block, in ISO format.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Date at which the transaction was included in a block, in ISO format.</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						string
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setConfirmed" id="_setConfirmed">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setConfirmed">#</a>
+			<code><a href="source-class-BlockCypher.Api.Transaction.html#287-297" title="Go to source code">setConfirmed</a>( <span>string <var>$confirmed</var></span> )</code>
+
+			<div class="description short">
+				<p>Date at which the transaction was included in a block, in ISO format.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Date at which the transaction was included in a block, in ISO format.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$confirmed</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<br>$this
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getReceived" id="_getReceived">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getReceived">#</a>
+			<code><a href="source-class-BlockCypher.Api.Transaction.html#299-307" title="Go to source code">getReceived</a>( )</code>
+
+			<div class="description short">
+				<p>When the transaction was received by BlockCypher servers.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>When the transaction was received by BlockCypher servers.</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						string
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setReceived" id="_setReceived">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setReceived">#</a>
+			<code><a href="source-class-BlockCypher.Api.Transaction.html#309-319" title="Go to source code">setReceived</a>( <span>string <var>$received</var></span> )</code>
+
+			<div class="description short">
+				<p>When the transaction was received by BlockCypher servers.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>When the transaction was received by BlockCypher servers.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$received</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<br>$this
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getVer" id="_getVer">
+
+			<td class="attributes"><code>
+				 public 
+				integer
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getVer">#</a>
+			<code><a href="source-class-BlockCypher.Api.Transaction.html#321-327" title="Go to source code">getVer</a>( )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						integer
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setVer" id="_setVer">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setVer">#</a>
+			<code><a href="source-class-BlockCypher.Api.Transaction.html#329-337" title="Go to source code">setVer</a>( <span>integer <var>$ver</var></span> )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$ver</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<br>$this
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getLockTime" id="_getLockTime">
+
+			<td class="attributes"><code>
+				 public 
+				integer
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getLockTime">#</a>
+			<code><a href="source-class-BlockCypher.Api.Transaction.html#339-345" title="Go to source code">getLockTime</a>( )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						integer
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setLockTime" id="_setLockTime">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setLockTime">#</a>
+			<code><a href="source-class-BlockCypher.Api.Transaction.html#347-355" title="Go to source code">setLockTime</a>( <span>integer <var>$lock_time</var></span> )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$lock_time</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<br>$this
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="isDoubleSpend" id="_isDoubleSpend">
+
+			<td class="attributes"><code>
+				 public 
+				boolean
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_isDoubleSpend">#</a>
+			<code><a href="source-class-BlockCypher.Api.Transaction.html#357-363" title="Go to source code">isDoubleSpend</a>( )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getDoubleSpend" id="_getDoubleSpend">
+
+			<td class="attributes"><code>
+				 public 
+				boolean
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getDoubleSpend">#</a>
+			<code><a href="source-class-BlockCypher.Api.Transaction.html#365-373" title="Go to source code">getDoubleSpend</a>( )</code>
+
+			<div class="description short">
+				<p>Whether the transaction is a double spend (see Zero Confirmations).</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Whether the transaction is a double spend (see Zero Confirmations).</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setDoubleSpend" id="_setDoubleSpend">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setDoubleSpend">#</a>
+			<code><a href="source-class-BlockCypher.Api.Transaction.html#375-385" title="Go to source code">setDoubleSpend</a>( <span>boolean <var>$double_spend</var></span> )</code>
+
+			<div class="description short">
+				<p>Whether the transaction is a double spend (see Zero Confirmations).</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Whether the transaction is a double spend (see Zero Confirmations).</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$double_spend</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<br>$this
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getDoubleSpendTx" id="_getDoubleSpendTx">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getDoubleSpendTx">#</a>
+			<code><a href="source-class-BlockCypher.Api.Transaction.html#387-393" title="Go to source code">getDoubleSpendTx</a>( )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						string
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setDoubleSpendTx" id="_setDoubleSpendTx">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setDoubleSpendTx">#</a>
+			<code><a href="source-class-BlockCypher.Api.Transaction.html#395-403" title="Go to source code">setDoubleSpendTx</a>( <span>string <var>$double_spend_tx</var></span> )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$double_spend_tx</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<br>$this
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getVinSz" id="_getVinSz">
+
+			<td class="attributes"><code>
+				 public 
+				integer
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getVinSz">#</a>
+			<code><a href="source-class-BlockCypher.Api.Transaction.html#405-413" title="Go to source code">getVinSz</a>( )</code>
+
+			<div class="description short">
+				<p>Total number of inputs</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Total number of inputs</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						integer
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setVinSz" id="_setVinSz">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setVinSz">#</a>
+			<code><a href="source-class-BlockCypher.Api.Transaction.html#415-425" title="Go to source code">setVinSz</a>( <span>integer <var>$vin_sz</var></span> )</code>
+
+			<div class="description short">
+				<p>Total number of inputs</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Total number of inputs</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$vin_sz</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<br>$this
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getVoutSz" id="_getVoutSz">
+
+			<td class="attributes"><code>
+				 public 
+				integer
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getVoutSz">#</a>
+			<code><a href="source-class-BlockCypher.Api.Transaction.html#427-435" title="Go to source code">getVoutSz</a>( )</code>
+
+			<div class="description short">
+				<p>Total number of outputs</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Total number of outputs</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						integer
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setVoutSz" id="_setVoutSz">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setVoutSz">#</a>
+			<code><a href="source-class-BlockCypher.Api.Transaction.html#437-447" title="Go to source code">setVoutSz</a>( <span>integer <var>$vout_sz</var></span> )</code>
+
+			<div class="description short">
+				<p>Total number of outputs</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Total number of outputs</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$vout_sz</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<br>$this
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getConfirmations" id="_getConfirmations">
+
+			<td class="attributes"><code>
+				 public 
+				integer
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getConfirmations">#</a>
+			<code><a href="source-class-BlockCypher.Api.Transaction.html#449-457" title="Go to source code">getConfirmations</a>( )</code>
+
+			<div class="description short">
+				<p>Number of subsequent blocks, including the block the transaction is in. Unconfirmed transactions have 0 for confirmation.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Number of subsequent blocks, including the block the transaction is in. Unconfirmed transactions have 0 for confirmation.</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						integer
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setConfirmations" id="_setConfirmations">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setConfirmations">#</a>
+			<code><a href="source-class-BlockCypher.Api.Transaction.html#459-469" title="Go to source code">setConfirmations</a>( <span>integer <var>$confirmations</var></span> )</code>
+
+			<div class="description short">
+				<p>Number of subsequent blocks, including the block the transaction is in. Unconfirmed transactions have 0 for confirmation.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Number of subsequent blocks, including the block the transaction is in. Unconfirmed transactions have 0 for confirmation.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$confirmations</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<br>$this
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getConfidence" id="_getConfidence">
+
+			<td class="attributes"><code>
+				 public 
+				integer
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getConfidence">#</a>
+			<code><a href="source-class-BlockCypher.Api.Transaction.html#471-479" title="Go to source code">getConfidence</a>( )</code>
+
+			<div class="description short">
+				<p>Unconfirmed transactions only. Confidence this transaction will be confirmed (see Zero Confirmations).</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Unconfirmed transactions only. Confidence this transaction will be confirmed (see Zero Confirmations).</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						integer
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setConfidence" id="_setConfidence">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setConfidence">#</a>
+			<code><a href="source-class-BlockCypher.Api.Transaction.html#481-491" title="Go to source code">setConfidence</a>( <span>integer <var>$confidence</var></span> )</code>
+
+			<div class="description short">
+				<p>Unconfirmed transactions only. Confidence this transaction will be confirmed (see Zero Confirmations).</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Unconfirmed transactions only. Confidence this transaction will be confirmed (see Zero Confirmations).</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$confidence</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<br>$this
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getInputs" id="_getInputs">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-BlockCypher.Api.Input.html">BlockCypher\Api\Input</a>[]</code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getInputs">#</a>
+			<code><a href="source-class-BlockCypher.Api.Transaction.html#493-502" title="Go to source code">getInputs</a>( )</code>
+
+			<div class="description short">
+				<p>Array of inputs, limited to 20. Use paging to get more inputs (see section on blocks) with
+instart and limit URL parameters.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Array of inputs, limited to 20. Use paging to get more inputs (see section on blocks) with
+instart and limit URL parameters.</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-BlockCypher.Api.Input.html">BlockCypher\Api\Input</a>[]</code>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setInputs" id="_setInputs">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setInputs">#</a>
+			<code><a href="source-class-BlockCypher.Api.Transaction.html#504-515" title="Go to source code">setInputs</a>( <span><code><a href="class-BlockCypher.Api.Input.html">BlockCypher\Api\Input</a>[]</code> <var>$inputs</var></span> )</code>
+
+			<div class="description short">
+				<p>Array of inputs, limited to 20. Use paging to get more inputs (see section on blocks) with
+instart and limit URL parameters.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Array of inputs, limited to 20. Use paging to get more inputs (see section on blocks) with
+instart and limit URL parameters.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$inputs</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<br>$this
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getOutputs" id="_getOutputs">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-BlockCypher.Api.Output.html">BlockCypher\Api\Output</a>[]</code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getOutputs">#</a>
+			<code><a href="source-class-BlockCypher.Api.Transaction.html#517-526" title="Go to source code">getOutputs</a>( )</code>
+
+			<div class="description short">
+				<p>Array of outputs, limited to 20. Use paging to get more outputs (see section on blocks) with
+outstart and limit URL parameters.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Array of outputs, limited to 20. Use paging to get more outputs (see section on blocks) with
+outstart and limit URL parameters.</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-BlockCypher.Api.Output.html">BlockCypher\Api\Output</a>[]</code>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setOutputs" id="_setOutputs">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setOutputs">#</a>
+			<code><a href="source-class-BlockCypher.Api.Transaction.html#528-539" title="Go to source code">setOutputs</a>( <span><code><a href="class-BlockCypher.Api.Output.html">BlockCypher\Api\Output</a>[]</code> <var>$outputs</var></span> )</code>
+
+			<div class="description short">
+				<p>Array of outputs, limited to 20. Use paging to get more outputs (see section on blocks) with
+outstart and limit URL parameters.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Array of outputs, limited to 20. Use paging to get more outputs (see section on blocks) with
+outstart and limit URL parameters.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$outputs</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<br>$this
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setBlockHash" id="_setBlockHash">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setBlockHash">#</a>
+			<code><a href="source-class-BlockCypher.Api.Transaction.html#541-551" title="Go to source code">setBlockHash</a>( <span> <var>$block_hash</var></span> )</code>
+
+			<div class="description short">
+				<p>BlockHash of the block the transaction is in. Only exists for confirmed transactions.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>BlockHash of the block the transaction is in. Only exists for confirmed transactions.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$block_hash</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<br>$this
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getBlockHash" id="_getBlockHash">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getBlockHash">#</a>
+			<code><a href="source-class-BlockCypher.Api.Transaction.html#553-561" title="Go to source code">getBlockHash</a>( )</code>
+
+			<div class="description short">
+				<p>BlockHash of the block the transaction is in. Only exists for confirmed transactions.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>BlockHash of the block the transaction is in. Only exists for confirmed transactions.</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						string
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setBlockHeight" id="_setBlockHeight">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setBlockHeight">#</a>
+			<code><a href="source-class-BlockCypher.Api.Transaction.html#563-573" title="Go to source code">setBlockHeight</a>( <span> <var>$block_height</var></span> )</code>
+
+			<div class="description short">
+				<p>Height of the block the transaction is in. Only exists for confirmed transactions.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Height of the block the transaction is in. Only exists for confirmed transactions.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$block_height</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<br>$this
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getBlockHeight" id="_getBlockHeight">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getBlockHeight">#</a>
+			<code><a href="source-class-BlockCypher.Api.Transaction.html#575-583" title="Go to source code">getBlockHeight</a>( )</code>
+
+			<div class="description short">
+				<p>Height of the block the transaction is in. Only exists for confirmed transactions.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Height of the block the transaction is in. Only exists for confirmed transactions.</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						string
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setHash" id="_setHash">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setHash">#</a>
+			<code><a href="source-class-BlockCypher.Api.Transaction.html#585-596" title="Go to source code">setHash</a>( <span> <var>$hash</var></span> )</code>
+
+			<div class="description short">
+				<p>Hash of the transaction. While hashes are reasonably unique, using them as identifiers may be unsafe.
+https://en.bitcoin.it/wiki/Transaction_Malleability</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Hash of the transaction. While hashes are reasonably unique, using them as identifiers may be unsafe.
+https://en.bitcoin.it/wiki/Transaction_Malleability</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$hash</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<br>$this
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getHash" id="_getHash">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getHash">#</a>
+			<code><a href="source-class-BlockCypher.Api.Transaction.html#598-607" title="Go to source code">getHash</a>( )</code>
+
+			<div class="description short">
+				<p>Hash of the transaction. While hashes are reasonably unique, using them as identifiers may be unsafe.
+https://en.bitcoin.it/wiki/Transaction_Malleability</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Hash of the transaction. While hashes are reasonably unique, using them as identifiers may be unsafe.
+https://en.bitcoin.it/wiki/Transaction_Malleability</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						string
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setFees" id="_setFees">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setFees">#</a>
+			<code><a href="source-class-BlockCypher.Api.Transaction.html#609-619" title="Go to source code">setFees</a>( <span> <var>$fees</var></span> )</code>
+
+			<div class="description short">
+				<p>Fees collected by miners in the transaction, in satoshis.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Fees collected by miners in the transaction, in satoshis.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$fees</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<br>$this
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getFees" id="_getFees">
+
+			<td class="attributes"><code>
+				 public 
+				integer
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getFees">#</a>
+			<code><a href="source-class-BlockCypher.Api.Transaction.html#621-629" title="Go to source code">getFees</a>( )</code>
+
+			<div class="description short">
+				<p>Fees collected by miners in the transaction, in satoshis.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Fees collected by miners in the transaction, in satoshis.</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						integer
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getNextInputs" id="_getNextInputs">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getNextInputs">#</a>
+			<code><a href="source-class-BlockCypher.Api.Transaction.html#631-637" title="Go to source code">getNextInputs</a>( )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						string
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setNextInputs" id="_setNextInputs">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setNextInputs">#</a>
+			<code><a href="source-class-BlockCypher.Api.Transaction.html#639-647" title="Go to source code">setNextInputs</a>( <span>string <var>$next_inputs</var></span> )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$next_inputs</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<br>$this
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+			</table>
+		</div>
+
+		<div class="panel panel-default">
+	        <div class="panel-heading"><h3>Methods inherited from <a href="class-BlockCypher.Common.BlockCypherResourceModel.html#methods">BlockCypher\Common\BlockCypherResourceModel</a></h3></div>
+			<p class="elementList">
+				<code><a href="class-BlockCypher.Common.BlockCypherResourceModel.html#_executeCall">executeCall()</a></code>, 
+				<code><a href="class-BlockCypher.Common.BlockCypherResourceModel.html#_getApiContext">getApiContext()</a></code>, 
+				<code><a href="class-BlockCypher.Common.BlockCypherResourceModel.html#_getChainUrlPrefix">getChainUrlPrefix()</a></code>
+			</p>
+		</div>
+		<div class="panel panel-default">
+	        <div class="panel-heading"><h3>Methods inherited from <a href="class-BlockCypher.Common.BlockCypherBaseModel.html#methods">BlockCypher\Common\BlockCypherBaseModel</a></h3></div>
+			<p class="elementList">
+				<code><a href="class-BlockCypher.Common.BlockCypherBaseModel.html#_addError">addError()</a></code>, 
+				<code><a href="class-BlockCypher.Common.BlockCypherBaseModel.html#_getError">getError()</a></code>, 
+				<code><a href="class-BlockCypher.Common.BlockCypherBaseModel.html#_getErrors">getErrors()</a></code>, 
+				<code><a href="class-BlockCypher.Common.BlockCypherBaseModel.html#_removeError">removeError()</a></code>, 
+				<code><a href="class-BlockCypher.Common.BlockCypherBaseModel.html#_setError">setError()</a></code>, 
+				<code><a href="class-BlockCypher.Common.BlockCypherBaseModel.html#_setErrors">setErrors()</a></code>
+			</p>
+		</div>
+		<div class="panel panel-default">
+	        <div class="panel-heading"><h3>Methods inherited from <a href="class-BlockCypher.Common.BlockCypherModel.html#methods">BlockCypher\Common\BlockCypherModel</a></h3></div>
+			<p class="elementList">
+				<code><a href="class-BlockCypher.Common.BlockCypherModel.html#___construct">__construct()</a></code>, 
+				<code><a href="class-BlockCypher.Common.BlockCypherModel.html#___get">__get()</a></code>, 
+				<code><a href="class-BlockCypher.Common.BlockCypherModel.html#___isset">__isset()</a></code>, 
+				<code><a href="class-BlockCypher.Common.BlockCypherModel.html#___set">__set()</a></code>, 
+				<code><a href="class-BlockCypher.Common.BlockCypherModel.html#___toString">__toString()</a></code>, 
+				<code><a href="class-BlockCypher.Common.BlockCypherModel.html#___unset">__unset()</a></code>, 
+				<code><a href="class-BlockCypher.Common.BlockCypherModel.html#_fromArray">fromArray()</a></code>, 
+				<code><a href="class-BlockCypher.Common.BlockCypherModel.html#_fromJson">fromJson()</a></code>, 
+				<code><a href="class-BlockCypher.Common.BlockCypherModel.html#_getList">getList()</a></code>, 
+				<code><a href="class-BlockCypher.Common.BlockCypherModel.html#_setCredential"><span class="deprecated">setCredential()</span></a></code>, 
+				<code><a href="class-BlockCypher.Common.BlockCypherModel.html#_toArray">toArray()</a></code>, 
+				<code><a href="class-BlockCypher.Common.BlockCypherModel.html#_toJSON">toJSON()</a></code>
+			</p>
+		</div>
+
+
+
+
+
+
+
+
+
+
+		<div class="panel panel-default">
+            <div class="panel-heading"><h2>Properties summary</h2></div>
+		</div>
+
+		<div class="panel panel-default">
+            <div class="panel-heading"><h3>Properties inherited from <a href="class-BlockCypher.Common.BlockCypherModel.html#properties">BlockCypher\Common\BlockCypherModel</a></h3></div>
+			<p class="elementList">
+				<code><a href="class-BlockCypher.Common.BlockCypherModel.html#$credential"><var>$credential</var></a></code>
+			</p>
+		</div>
+
+
+
+
+
+</div>
+	</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>
